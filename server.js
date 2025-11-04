@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY); // Use environment variable for Stripe secret key
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY || 'sk_test_51PxexampleStripeSecretKeyHere123456789'); // Use environment variable for Stripe secret key
 
 const app = express();
 const PORT = process.env.PORT || 3001;
